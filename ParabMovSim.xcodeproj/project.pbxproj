@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BDBD53F21903589000A558D9 /* LoopEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = BDBD53F11903589000A558D9 /* LoopEngine.m */; };
+		BDBD53F5190470D800A558D9 /* PhysicsEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = BDBD53F4190470D800A558D9 /* PhysicsEngine.m */; };
+		BDBD53F819047EC500A558D9 /* Vector.m in Sources */ = {isa = PBXBuildFile; fileRef = BDBD53F719047EC500A558D9 /* Vector.m */; };
+		BDBD53FA1904824600A558D9 /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = BDBD53F91904824600A558D9 /* ball.png */; };
+		BDBD53FC1905504700A558D9 /* ryanlerch_grassy_horizon_(gradient)_with_tree.png in Resources */ = {isa = PBXBuildFile; fileRef = BDBD53FB1905504700A558D9 /* ryanlerch_grassy_horizon_(gradient)_with_tree.png */; };
+		BDD64A9C1902039F007C068B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD64A9B1902039F007C068B /* Foundation.framework */; };
+		BDD64A9E1902039F007C068B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD64A9D1902039F007C068B /* CoreGraphics.framework */; };
+		BDD64AA01902039F007C068B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD64A9F1902039F007C068B /* UIKit.framework */; };
+		BDD64AA61902039F007C068B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BDD64AA41902039F007C068B /* InfoPlist.strings */; };
+		BDD64AA81902039F007C068B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD64AA71902039F007C068B /* main.m */; };
+		BDD64AAC1902039F007C068B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD64AAB1902039F007C068B /* AppDelegate.m */; };
+		BDD64AAE1902039F007C068B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDD64AAD1902039F007C068B /* Images.xcassets */; };
+		BDD64AB51902039F007C068B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD64AB41902039F007C068B /* XCTest.framework */; };
+		BDD64AB61902039F007C068B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD64A9B1902039F007C068B /* Foundation.framework */; };
+		BDD64AB71902039F007C068B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD64A9F1902039F007C068B /* UIKit.framework */; };
+		BDD64ABF190203A0007C068B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BDD64ABD190203A0007C068B /* InfoPlist.strings */; };
+		BDD64AC1190203A0007C068B /* ParabMovSimTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD64AC0190203A0007C068B /* ParabMovSimTests.m */; };
+		BDD64ACC1902A672007C068B /* ParabMovSimViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD64ACB1902A672007C068B /* ParabMovSimViewController.m */; };
+		BDD64ACF190328A7007C068B /* ParabMovSimView.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD64ACE190328A7007C068B /* ParabMovSimView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BDD64AB81902039F007C068B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDD64A901902039F007C068B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDD64A971902039F007C068B;
+			remoteInfo = ParabMovSim;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BDBD53F01903589000A558D9 /* LoopEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoopEngine.h; path = ParabMovSim/LoopEngine.h; sourceTree = "<group>"; };
+		BDBD53F11903589000A558D9 /* LoopEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoopEngine.m; path = ParabMovSim/LoopEngine.m; sourceTree = "<group>"; };
+		BDBD53F3190470D800A558D9 /* PhysicsEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhysicsEngine.h; path = ParabMovSim/PhysicsEngine.h; sourceTree = "<group>"; };
+		BDBD53F4190470D800A558D9 /* PhysicsEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PhysicsEngine.m; path = ParabMovSim/PhysicsEngine.m; sourceTree = "<group>"; };
+		BDBD53F619047EC500A558D9 /* Vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vector.h; path = ParabMovSim/Vector.h; sourceTree = "<group>"; };
+		BDBD53F719047EC500A558D9 /* Vector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Vector.m; path = ParabMovSim/Vector.m; sourceTree = "<group>"; };
+		BDBD53F91904824600A558D9 /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ball.png; path = ParabMovSim/ball.png; sourceTree = "<group>"; };
+		BDBD53FB1905504700A558D9 /* ryanlerch_grassy_horizon_(gradient)_with_tree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ryanlerch_grassy_horizon_(gradient)_with_tree.png"; path = "ParabMovSim/ryanlerch_grassy_horizon_(gradient)_with_tree.png"; sourceTree = "<group>"; };
+		BDD64A981902039F007C068B /* ParabMovSim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParabMovSim.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDD64A9B1902039F007C068B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BDD64A9D1902039F007C068B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BDD64A9F1902039F007C068B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BDD64AA31902039F007C068B /* ParabMovSim-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ParabMovSim-Info.plist"; sourceTree = "<group>"; };
+		BDD64AA51902039F007C068B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BDD64AA71902039F007C068B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BDD64AA91902039F007C068B /* ParabMovSim-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ParabMovSim-Prefix.pch"; sourceTree = "<group>"; };
+		BDD64AAA1902039F007C068B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BDD64AAB1902039F007C068B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BDD64AAD1902039F007C068B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BDD64AB31902039F007C068B /* ParabMovSimTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParabMovSimTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDD64AB41902039F007C068B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		BDD64ABC190203A0007C068B /* ParabMovSimTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ParabMovSimTests-Info.plist"; sourceTree = "<group>"; };
+		BDD64ABE190203A0007C068B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BDD64AC0190203A0007C068B /* ParabMovSimTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParabMovSimTests.m; sourceTree = "<group>"; };
+		BDD64ACA1902A672007C068B /* ParabMovSimViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParabMovSimViewController.h; path = ParabMovSim/ParabMovSimViewController.h; sourceTree = "<group>"; };
+		BDD64ACB1902A672007C068B /* ParabMovSimViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ParabMovSimViewController.m; path = ParabMovSim/ParabMovSimViewController.m; sourceTree = "<group>"; };
+		BDD64ACD190328A7007C068B /* ParabMovSimView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParabMovSimView.h; path = ParabMovSim/ParabMovSimView.h; sourceTree = "<group>"; };
+		BDD64ACE190328A7007C068B /* ParabMovSimView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ParabMovSimView.m; path = ParabMovSim/ParabMovSimView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BDD64A951902039F007C068B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDD64A9E1902039F007C068B /* CoreGraphics.framework in Frameworks */,
+				BDD64AA01902039F007C068B /* UIKit.framework in Frameworks */,
+				BDD64A9C1902039F007C068B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDD64AB01902039F007C068B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDD64AB51902039F007C068B /* XCTest.framework in Frameworks */,
+				BDD64AB71902039F007C068B /* UIKit.framework in Frameworks */,
+				BDD64AB61902039F007C068B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BD2F5BD7190F383700805C70 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				BDBD53FB1905504700A558D9 /* ryanlerch_grassy_horizon_(gradient)_with_tree.png */,
+				BDBD53F91904824600A558D9 /* ball.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		BD2F5BD8190F384D00805C70 /* Views & View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BDD64ACA1902A672007C068B /* ParabMovSimViewController.h */,
+				BDD64ACB1902A672007C068B /* ParabMovSimViewController.m */,
+				BDD64ACD190328A7007C068B /* ParabMovSimView.h */,
+				BDD64ACE190328A7007C068B /* ParabMovSimView.m */,
+			);
+			name = "Views & View Controllers";
+			sourceTree = "<group>";
+		};
+		BD2F5BD9190F387F00805C70 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BDBD53F619047EC500A558D9 /* Vector.h */,
+				BDBD53F719047EC500A558D9 /* Vector.m */,
+				BDBD53F3190470D800A558D9 /* PhysicsEngine.h */,
+				BDBD53F4190470D800A558D9 /* PhysicsEngine.m */,
+				BDBD53F01903589000A558D9 /* LoopEngine.h */,
+				BDBD53F11903589000A558D9 /* LoopEngine.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		BDD64A8F1902039F007C068B = {
+			isa = PBXGroup;
+			children = (
+				BD2F5BD9190F387F00805C70 /* Classes */,
+				BD2F5BD8190F384D00805C70 /* Views & View Controllers */,
+				BD2F5BD7190F383700805C70 /* Images */,
+				BDD64AA11902039F007C068B /* ParabMovSim */,
+				BDD64ABA1902039F007C068B /* ParabMovSimTests */,
+				BDD64A9A1902039F007C068B /* Frameworks */,
+				BDD64A991902039F007C068B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BDD64A991902039F007C068B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDD64A981902039F007C068B /* ParabMovSim.app */,
+				BDD64AB31902039F007C068B /* ParabMovSimTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDD64A9A1902039F007C068B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BDD64A9B1902039F007C068B /* Foundation.framework */,
+				BDD64A9D1902039F007C068B /* CoreGraphics.framework */,
+				BDD64A9F1902039F007C068B /* UIKit.framework */,
+				BDD64AB41902039F007C068B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BDD64AA11902039F007C068B /* ParabMovSim */ = {
+			isa = PBXGroup;
+			children = (
+				BDD64AAA1902039F007C068B /* AppDelegate.h */,
+				BDD64AAB1902039F007C068B /* AppDelegate.m */,
+				BDD64AAD1902039F007C068B /* Images.xcassets */,
+				BDD64AA21902039F007C068B /* Supporting Files */,
+			);
+			path = ParabMovSim;
+			sourceTree = "<group>";
+		};
+		BDD64AA21902039F007C068B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BDD64AA31902039F007C068B /* ParabMovSim-Info.plist */,
+				BDD64AA41902039F007C068B /* InfoPlist.strings */,
+				BDD64AA71902039F007C068B /* main.m */,
+				BDD64AA91902039F007C068B /* ParabMovSim-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BDD64ABA1902039F007C068B /* ParabMovSimTests */ = {
+			isa = PBXGroup;
+			children = (
+				BDD64AC0190203A0007C068B /* ParabMovSimTests.m */,
+				BDD64ABB190203A0007C068B /* Supporting Files */,
+			);
+			path = ParabMovSimTests;
+			sourceTree = "<group>";
+		};
+		BDD64ABB190203A0007C068B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BDD64ABC190203A0007C068B /* ParabMovSimTests-Info.plist */,
+				BDD64ABD190203A0007C068B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BDD64A971902039F007C068B /* ParabMovSim */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDD64AC4190203A0007C068B /* Build configuration list for PBXNativeTarget "ParabMovSim" */;
+			buildPhases = (
+				BDD64A941902039F007C068B /* Sources */,
+				BDD64A951902039F007C068B /* Frameworks */,
+				BDD64A961902039F007C068B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ParabMovSim;
+			productName = ParabMovSim;
+			productReference = BDD64A981902039F007C068B /* ParabMovSim.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BDD64AB21902039F007C068B /* ParabMovSimTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDD64AC7190203A0007C068B /* Build configuration list for PBXNativeTarget "ParabMovSimTests" */;
+			buildPhases = (
+				BDD64AAF1902039F007C068B /* Sources */,
+				BDD64AB01902039F007C068B /* Frameworks */,
+				BDD64AB11902039F007C068B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDD64AB91902039F007C068B /* PBXTargetDependency */,
+			);
+			name = ParabMovSimTests;
+			productName = ParabMovSimTests;
+			productReference = BDD64AB31902039F007C068B /* ParabMovSimTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BDD64A901902039F007C068B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Adriano Papa";
+				TargetAttributes = {
+					BDD64AB21902039F007C068B = {
+						TestTargetID = BDD64A971902039F007C068B;
+					};
+				};
+			};
+			buildConfigurationList = BDD64A931902039F007C068B /* Build configuration list for PBXProject "ParabMovSim" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BDD64A8F1902039F007C068B;
+			productRefGroup = BDD64A991902039F007C068B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BDD64A971902039F007C068B /* ParabMovSim */,
+				BDD64AB21902039F007C068B /* ParabMovSimTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BDD64A961902039F007C068B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDBD53FC1905504700A558D9 /* ryanlerch_grassy_horizon_(gradient)_with_tree.png in Resources */,
+				BDD64AA61902039F007C068B /* InfoPlist.strings in Resources */,
+				BDD64AAE1902039F007C068B /* Images.xcassets in Resources */,
+				BDBD53FA1904824600A558D9 /* ball.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDD64AB11902039F007C068B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDD64ABF190203A0007C068B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BDD64A941902039F007C068B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDBD53F819047EC500A558D9 /* Vector.m in Sources */,
+				BDD64ACF190328A7007C068B /* ParabMovSimView.m in Sources */,
+				BDD64ACC1902A672007C068B /* ParabMovSimViewController.m in Sources */,
+				BDD64AAC1902039F007C068B /* AppDelegate.m in Sources */,
+				BDBD53F5190470D800A558D9 /* PhysicsEngine.m in Sources */,
+				BDD64AA81902039F007C068B /* main.m in Sources */,
+				BDBD53F21903589000A558D9 /* LoopEngine.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDD64AAF1902039F007C068B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDD64AC1190203A0007C068B /* ParabMovSimTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BDD64AB91902039F007C068B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDD64A971902039F007C068B /* ParabMovSim */;
+			targetProxy = BDD64AB81902039F007C068B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BDD64AA41902039F007C068B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDD64AA51902039F007C068B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BDD64ABD190203A0007C068B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDD64ABE190203A0007C068B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BDD64AC2190203A0007C068B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BDD64AC3190203A0007C068B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BDD64AC5190203A0007C068B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ParabMovSim/ParabMovSim-Prefix.pch";
+				INFOPLIST_FILE = "ParabMovSim/ParabMovSim-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BDD64AC6190203A0007C068B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ParabMovSim/ParabMovSim-Prefix.pch";
+				INFOPLIST_FILE = "ParabMovSim/ParabMovSim-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BDD64AC8190203A0007C068B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ParabMovSim.app/ParabMovSim";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ParabMovSim/ParabMovSim-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ParabMovSimTests/ParabMovSimTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		BDD64AC9190203A0007C068B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ParabMovSim.app/ParabMovSim";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ParabMovSim/ParabMovSim-Prefix.pch";
+				INFOPLIST_FILE = "ParabMovSimTests/ParabMovSimTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BDD64A931902039F007C068B /* Build configuration list for PBXProject "ParabMovSim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDD64AC2190203A0007C068B /* Debug */,
+				BDD64AC3190203A0007C068B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDD64AC4190203A0007C068B /* Build configuration list for PBXNativeTarget "ParabMovSim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDD64AC5190203A0007C068B /* Debug */,
+				BDD64AC6190203A0007C068B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDD64AC7190203A0007C068B /* Build configuration list for PBXNativeTarget "ParabMovSimTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDD64AC8190203A0007C068B /* Debug */,
+				BDD64AC9190203A0007C068B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BDD64A901902039F007C068B /* Project object */;
+}
