@@ -8,11 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import "ParabMovSimView.h"
+#import "PhysicsEngine.h"
 
 @interface LoopEngine : NSObject <ParabMovSimViewDelegate>
 {
 	ParabMovSimView *mainView;
-	NSMutableDictionary *physicsEngineDict;
+//	NSMutableDictionary *physicsEngineDict;
+    PhysicsEngine *physicsEngine;
     NSThread *loopEngineThread;
     BOOL continueLoop;
 }

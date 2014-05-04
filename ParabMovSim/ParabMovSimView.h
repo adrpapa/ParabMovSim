@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PhysicsEngine.h"
+#import "Entity.h"
 
 @protocol ParabMovSimViewDelegate;
 
@@ -30,8 +30,8 @@
 
 @protocol ParabMovSimViewDelegate
 
-- (void)addPhysicsEngine:(PhysicsEngine*)_physicsEngine withKey:(NSString*)key;
-- (void)removePhysicsEngine:(NSString*)key;
+- (void)addEntity:(Entity*)_physicsEngine withKey:(NSString*)key;
+- (void)removeEntity:(NSString*)key;
 - (void)stop;
 
 @end

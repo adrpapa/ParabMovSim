@@ -1,8 +1,8 @@
 //
 //  PhysicsEngine.m
-//  PegaMaca
+//  ParabMovSim
 //
-//  Created by Adriano Papa on 3/2/14.
+//  Created by Adriano Papa on 5/4/14.
 //  Copyright (c) 2014 Adriano Papa. All rights reserved.
 //
 
@@ -10,59 +10,39 @@
 
 @implementation PhysicsEngine
 
-@synthesize s;
+@synthesize entityDict;
 
-- (id)initWithKey:(NSString*)_key andAngle:(double)angleInDegree andVelocity:(double)velocity
+- (id)init
 {
     self = [super init];
     
     if (self)
     {
-        // Initialization code
-        s = [[Vector alloc] initWithZeros]; // Vetor de deslocamento do projetil
-        
-		key = _key;
-        Vm = velocity;                      // Velocidade de saida do projetil (escalar)
-        Alpha = angleInDegree;              // Angulo entre o canhão e o eixo Y
-        Gamma = 0.0;                        // Angulo entre a projeção do canhão no eixo Z e o eixo X
-        L = 12.0;                           // Tamanho do canhão
-        Yb = 10.0;                          // Elevação do canhão
-        time = 0.0;
-        tInc = 0.05;
-        g = 9.8;
+		entityDict = [NSMutableDictionary dictionaryWithCapacity:5];
     }
     
     return self;
 }
 
-- (void)update
+- (void)addEntity:(Entity*)_entity withKey:(NSString*)key
 {
-    double cosX;
-    double cosY;
-    double cosZ;
-    double xe, ze;
-    double b, Lx, Ly, Lz;
-    
-    time += tInc;
-    
-    b = L * cos((90-Alpha) * M_PI/180);
-    Lx = b * cos(Gamma * M_PI/180);
-    Ly = L * cos(Alpha * M_PI/180);
-    Lz = b * sin(Gamma * M_PI/180);
-    
-    cosX = Lx/L;
-    cosY = Ly/L;
-    cosZ = Lz/L;
-    
-    xe = L * cos((90-Alpha) * M_PI/180) * cos(Gamma * M_PI/180);
-    ze = L * cos((90-Alpha) * M_PI/180) * sin(Gamma * M_PI/180);
-    
-    s.x = Vm * cosX * time + xe;
-    s.y = (Yb + L * cos(Alpha * M_PI/180)) + (Vm * cosY * time) - (0.5 * g * time * time);
-    s.z = Vm * cosZ * time + ze;
-
-    return;
+	[entityDict setValue:_entity forKey:key];
 }
 
+- (void)removeEntity:(NSString*)key
+{
+	[entityDict removeObjectForKey:key];
+}
+
+- (void)update
+{
+	[entityDict enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
+        // Get the Entity object
+		Entity *entityObj = (Entity*) obj;
+        
+        // Update the Entity
+        [entityObj update];
+	}];
+}
 
 @end

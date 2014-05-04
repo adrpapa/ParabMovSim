@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD7E6E7819169DF900568E96 /* PhysicsEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7E6E7719169DF900568E96 /* PhysicsEngine.m */; };
 		BDBD53F21903589000A558D9 /* LoopEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = BDBD53F11903589000A558D9 /* LoopEngine.m */; };
-		BDBD53F5190470D800A558D9 /* PhysicsEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = BDBD53F4190470D800A558D9 /* PhysicsEngine.m */; };
+		BDBD53F5190470D800A558D9 /* Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = BDBD53F4190470D800A558D9 /* Entity.m */; };
 		BDBD53F819047EC500A558D9 /* Vector.m in Sources */ = {isa = PBXBuildFile; fileRef = BDBD53F719047EC500A558D9 /* Vector.m */; };
 		BDBD53FA1904824600A558D9 /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = BDBD53F91904824600A558D9 /* ball.png */; };
 		BDBD53FC1905504700A558D9 /* ryanlerch_grassy_horizon_(gradient)_with_tree.png in Resources */ = {isa = PBXBuildFile; fileRef = BDBD53FB1905504700A558D9 /* ryanlerch_grassy_horizon_(gradient)_with_tree.png */; };
@@ -39,10 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BD7E6E7619169DF900568E96 /* PhysicsEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhysicsEngine.h; path = ParabMovSim/PhysicsEngine.h; sourceTree = "<group>"; };
+		BD7E6E7719169DF900568E96 /* PhysicsEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PhysicsEngine.m; path = ParabMovSim/PhysicsEngine.m; sourceTree = "<group>"; };
 		BDBD53F01903589000A558D9 /* LoopEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoopEngine.h; path = ParabMovSim/LoopEngine.h; sourceTree = "<group>"; };
 		BDBD53F11903589000A558D9 /* LoopEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoopEngine.m; path = ParabMovSim/LoopEngine.m; sourceTree = "<group>"; };
-		BDBD53F3190470D800A558D9 /* PhysicsEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhysicsEngine.h; path = ParabMovSim/PhysicsEngine.h; sourceTree = "<group>"; };
-		BDBD53F4190470D800A558D9 /* PhysicsEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PhysicsEngine.m; path = ParabMovSim/PhysicsEngine.m; sourceTree = "<group>"; };
+		BDBD53F3190470D800A558D9 /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Entity.h; path = ParabMovSim/Entity.h; sourceTree = "<group>"; };
+		BDBD53F4190470D800A558D9 /* Entity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Entity.m; path = ParabMovSim/Entity.m; sourceTree = "<group>"; };
 		BDBD53F619047EC500A558D9 /* Vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vector.h; path = ParabMovSim/Vector.h; sourceTree = "<group>"; };
 		BDBD53F719047EC500A558D9 /* Vector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Vector.m; path = ParabMovSim/Vector.m; sourceTree = "<group>"; };
 		BDBD53F91904824600A558D9 /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ball.png; path = ParabMovSim/ball.png; sourceTree = "<group>"; };
@@ -116,10 +119,12 @@
 		BD2F5BD9190F387F00805C70 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				BD7E6E7619169DF900568E96 /* PhysicsEngine.h */,
+				BD7E6E7719169DF900568E96 /* PhysicsEngine.m */,
 				BDBD53F619047EC500A558D9 /* Vector.h */,
 				BDBD53F719047EC500A558D9 /* Vector.m */,
-				BDBD53F3190470D800A558D9 /* PhysicsEngine.h */,
-				BDBD53F4190470D800A558D9 /* PhysicsEngine.m */,
+				BDBD53F3190470D800A558D9 /* Entity.h */,
+				BDBD53F4190470D800A558D9 /* Entity.m */,
 				BDBD53F01903589000A558D9 /* LoopEngine.h */,
 				BDBD53F11903589000A558D9 /* LoopEngine.m */,
 			);
@@ -299,8 +304,9 @@
 				BDBD53F819047EC500A558D9 /* Vector.m in Sources */,
 				BDD64ACF190328A7007C068B /* ParabMovSimView.m in Sources */,
 				BDD64ACC1902A672007C068B /* ParabMovSimViewController.m in Sources */,
+				BD7E6E7819169DF900568E96 /* PhysicsEngine.m in Sources */,
 				BDD64AAC1902039F007C068B /* AppDelegate.m in Sources */,
-				BDBD53F5190470D800A558D9 /* PhysicsEngine.m in Sources */,
+				BDBD53F5190470D800A558D9 /* Entity.m in Sources */,
 				BDD64AA81902039F007C068B /* main.m in Sources */,
 				BDBD53F21903589000A558D9 /* LoopEngine.m in Sources */,
 			);

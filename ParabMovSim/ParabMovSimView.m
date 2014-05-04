@@ -93,9 +93,9 @@ CGFloat RadiansToDegrees(CGFloat radians) {return radians * 180/M_PI;};
     [ballViewDict setValue:ball forKey:key];
 	
 	// Create one PE and Add it to Loop Engine
-	PhysicsEngine *ph_eng = [[PhysicsEngine alloc] initWithKey:key andAngle:90-RadiansToDegrees(lineAngle) andVelocity:lineLen/2.0];
+	Entity *ph_eng = [[Entity alloc] initWithKey:key andAngle:90-RadiansToDegrees(lineAngle) andVelocity:lineLen/2.0];
 	// Call the delegate
-    [self.delegate addPhysicsEngine:ph_eng withKey:key];
+    [self.delegate addEntity:ph_eng withKey:key];
 	
 	// Add to Landscape View
 	[self addSubview:ball];
@@ -121,7 +121,7 @@ CGFloat RadiansToDegrees(CGFloat radians) {return radians * 180/M_PI;};
     if ((ball.layer.position.y > self.bounds.size.height || ball.layer.position.x > self.bounds.size.width ||
          ball.layer.position.x < 0 || ball.layer.position.y < 0) )
     {
-        [self.delegate removePhysicsEngine:key];
+        [self.delegate removeEntity:key];
         [ball removeFromSuperview];
     }
     else

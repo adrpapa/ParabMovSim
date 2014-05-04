@@ -21,7 +21,8 @@
     
     if (self)
     {
-		physicsEngineDict = [NSMutableDictionary dictionaryWithCapacity:MAX_OBJS];
+//		physicsEngineDict = [NSMutableDictionary dictionaryWithCapacity:MAX_OBJS];
+        physicsEngine = [[PhysicsEngine alloc] init];
     }
     
     return self;
@@ -32,8 +33,6 @@
     while (loopEngineThread && ![loopEngineThread isFinished]) { // Wait for the thread to finish.
         [NSThread sleepForTimeInterval:0.1];
     }
-    
-    // 24 quadros/sec
 }
 
 - (void)startLoopEngineThread
@@ -55,9 +54,11 @@
     [NSThread setThreadPriority:1.0];
     continueLoop = true;
 	
-	while (continueLoop)
+	while (continueLoop) 
 	{
         [NSThread sleepForTimeInterval:TIME_UNIT];
+        
+        // Call Update()
         [self performSelectorOnMainThread:@selector(update) withObject:nil waitUntilDone:NO];
 	}
 }
@@ -73,20 +74,15 @@
 #pragma mark -
 #pragma mark === Delegates Implementation ===
 #pragma mark -
-//
-// Add one PE
-//
-- (void)addPhysicsEngine:(PhysicsEngine*)_physicsEngine withKey:(NSString*)key
+
+- (void)addEntity:(Entity*)_entity withKey:(NSString*)key
 {
-	[physicsEngineDict setValue:_physicsEngine forKey:key];
+	[physicsEngine.entityDict setValue:_entity forKey:key];
 }
 
-//
-// Remove one PE
-//
-- (void)removePhysicsEngine:(NSString*)key
+- (void)removeEntity:(NSString*)key
 {
-	[physicsEngineDict removeObjectForKey:key];
+	[physicsEngine.entityDict removeObjectForKey:key];
 }
 
 - (void)stop
@@ -96,21 +92,23 @@
 
 // ********** End Delegate Implementation ***********
 
-//
-// Update all the PhysicsEngines
-//
 - (void)update
 {
-	[physicsEngineDict enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
-        // Get the PE object
-		PhysicsEngine *peobj = (PhysicsEngine*) obj;
-        
-        // Update the PE
-        [peobj update];
-        
-        // Update the PE attached View
-		[mainView updateViewWithKey:key withPoint:CGPointMake(peobj.s.y,peobj.s.x)];
-	}];
+    // Update entities position
+    [physicsEngine update];
+    
+    // Render on the view
+    [self render];
+}
+
+- (void)render
+{
+	[physicsEngine.entityDict enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
+        // Get the Entity object
+		Entity *entityObj = (Entity*) obj;
+
+	    [mainView updateViewWithKey:key withPoint:CGPointMake(entityObj.s.y,entityObj.s.x)];
+    }];
 }
 
 @end
