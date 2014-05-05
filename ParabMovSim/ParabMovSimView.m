@@ -25,9 +25,25 @@ CGFloat RadiansToDegrees(CGFloat radians) {return radians * 180/M_PI;};
 		ballCount = 0;
 		ballViewDict = [NSMutableDictionary dictionaryWithCapacity:MAX_OBJS];
 
+        UILabel *lbl_msg = [[UILabel alloc] initWithFrame:CGRectMake(self.center.x-(320.0/2), self.center.y, 320.0, 50.0)];
+        lbl_msg.font = [UIFont boldSystemFontOfSize:12.0];
+        lbl_msg.backgroundColor = [UIColor clearColor];
+        lbl_msg.textColor = [UIColor colorWithRed:214.0/255.0 green:156.0/255.0 blue:138.0/255.0 alpha:1.0];
+        lbl_msg.text = @"Drag and drop to set up the launching angle and speedy";
+        
         lastLayer = nil;
+        
+        [self rotateLayer:lbl_msg.layer];
+        [self addSubview:lbl_msg];
     }
     return self;
+}
+
+- (void)rotateLayer:(CALayer*)layer
+{
+    CATransform3D rotationTransform = CATransform3DIdentity;
+    rotationTransform = CATransform3DRotate(rotationTransform, 90*M_PI/180, 0.0, 0.0, 1.0);
+    layer.transform = rotationTransform;
 }
 
 - (void)drawThrowVector:(CGPoint)toPoint
