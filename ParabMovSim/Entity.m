@@ -28,7 +28,7 @@
         L = 12.0;                           // Tamanho do canhão
         Yb = 10.0;                          // Elevação do canhão
         time = 0.0;
-        tInc = 0.05;
+        tInc = 0.05;                        // incremento de tempo
         g = 9.8;
     }
     
